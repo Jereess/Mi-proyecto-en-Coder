@@ -8,28 +8,37 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../imagenes/parking-g9aa4590f4_640.png">
     <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-   <header>
-    <div id="div1">
-        <h1>Estacionamiento Mitre</h1>
-        <img id="imagen1" src="../imagenes/logo.png" alt="logo">
-        
-        <nav class="barra">
-
-             <ul>   
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="quienesSomos.html">Quienes somos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="#">Ubicacion</a></li> 
-                <li><a href="contacto.html">Contacto</a></li>
-             </ul>
-   
-        </nav>
-
-
-    </div>
-    </header>
+    <nav id="navbarboot" class="navbar navbar-expand-lg  ">
+        <div class="container-fluid">
+          <img id="imagenboot" src="../imagenes/logo.png" alt="logo">
+          <a class="navbar-brand" href="homeboostrap.html">Estacionamiento Mitre</a>
+          <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="homeboostrap.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienesSomos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <main>
         <img id="banner" src="../imagenes/banner.jpg" alt="banner">
     
@@ -65,6 +74,6 @@
             
 
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
