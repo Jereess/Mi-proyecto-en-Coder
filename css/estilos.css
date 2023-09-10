@@ -471,6 +471,9 @@ html {
     height: 50px;
     width: 50px;
   }
+  #carouselExampleFade {
+    height: 400px;
+  }
 }
 @media only screen and (max-width: 415px) {
   #imagenboot {
