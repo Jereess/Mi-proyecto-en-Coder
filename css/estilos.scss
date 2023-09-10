@@ -22,7 +22,8 @@ main{
     background-size: cover;
     background-position: center;
     background-color: #3ea0e6;
-    background-image: linear-gradient(0deg, #3ea0e6 0%, aliceblue 4%, #fafafa 96%, #3ea0e6 100%);
+    background-image: linear-gradient(180deg, #3ea0e6 2%, #f0f8ff 15%, #fafafa 93%, #3ea0e6 98%);
+
 }
 #mainubicacion{
     background-size: cover;
@@ -159,15 +160,26 @@ main{
         overflow-x: auto;
         width: 100%;
         height: 499px;
+        
     
     }
 }
 .carrucel7 #carrucel1 img{
     width: 100%;
-    background-size: cover;
+    /* background-size:cover; */
     scroll-snap-align: center;
 }
 
+#carouselExampleFade{
+    background-size: cover !important;
+    height: 600px !important;
+
+    div img{
+        background-size: cover !important;
+        background-position: center !important;
+        height: 600px !important;
+    }
+}
 footer {
     background-color:#3EA0E6 ;
     width: 100%;
@@ -190,58 +202,62 @@ footer {
 html{
     scroll-behavior: smooth;
 }
+.oferta{
+    h2{
+        text-shadow: 0px 0px 5px #000;
+    }
+}
 .galeria{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    height: 600px;
-    width: 50%; 
+    height: 1000px;
+    width: 100%; 
     grid-template-areas: "img1 img1 img2 img3"
                         "img4 img5 img6 img6"
                         "img7 img7 img8 img8";
 
-
-        .item{
+    .item{
         border: 2px solid $colorsecundario;
         background-size: cover;
         background-position: center;
         border-radius: 10px;
         margin: 10px;
-    
-            .item1{
-                background-image: url(../imagenes/auto1.jpg);
-                grid-area: img1
-            }
-            .item2{
-                background-image: url(../imagenes/auto3\ \(1\).jpg);
-                grid-area: img2
-            }
-            .item3 {
-                background-image: url(../imagenes/auto3\ \(2\).jpg);
-                grid-area: img3
-            }
-            .item4{
-                background-image: url(../imagenes/banner.jpg);
-                grid-area: img4
-            }
-            .item5{
-                background-image: url(../imagenes/parking-g9aa4590f4_640.png);
-                grid-area: img5;
-            }
-            .item6{
-                background-image: url(../imagenes/auto1.jpg);
-                grid-area: img6;
-            }   
-            .item7{
-                background-image: url(../imagenes/auto3\ \(1\).jpg); 
-                grid-area: img7; 
-            }
-            .item8{
-                background-image: url(../imagenes/auto3\ \(2\).jpg);
-                grid-area: img8;
-            }
-        }
+    }
+    .item1{
+        background-image: url(../imagenes/foto4.jpg);
+        grid-area: img1;
+    }
+    .item2{
+        background-image: url(../imagenes/foto6.jpg);
+        grid-area: img2;
+    }
+    .item3 {
+        background-image: url(../imagenes/foto8.jpg);
+        grid-area: img3;
+    }
+    .item4{
+        background-image: url(../imagenes/foto9.jpg);
+        grid-area: img4
+    }
+    .item5{
+        background-image: url(../imagenes/foto11.jpg);
+        grid-area: img5;
+    }
+    .item6{
+        background-image: url(../imagenes/foto2.jpg);
+        grid-area: img6;
+    }   
+    .item7{
+        background-image: url(../imagenes/foto5.jpg); 
+        grid-area: img7; 
+    }
+    .item8{
+        background-image: url(../imagenes/foto10.jpg);
+        grid-area: img8;
+    }
 }
+
 .galeria :hover{
     transform: scale(1.10);
     transition: all 0.9s;

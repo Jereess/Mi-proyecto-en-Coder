@@ -18,7 +18,7 @@ main {
   background-size: cover;
   background-position: center;
   background-color: #3ea0e6;
-  background-image: linear-gradient(0deg, #3ea0e6 0%, aliceblue 4%, #fafafa 96%, #3ea0e6 100%);
+  background-image: linear-gradient(180deg, #3ea0e6 2%, #f0f8ff 15%, #fafafa 93%, #3ea0e6 98%);
 }
 
 #mainubicacion {
@@ -160,8 +160,18 @@ main {
 
 .carrucel7 #carrucel1 img {
   width: 100%;
-  background-size: cover;
+  /* background-size:cover; */
   scroll-snap-align: center;
+}
+
+#carouselExampleFade {
+  background-size: cover !important;
+  height: 600px !important;
+}
+#carouselExampleFade div img {
+  background-size: cover !important;
+  background-position: center !important;
+  height: 600px !important;
 }
 
 footer {
@@ -187,12 +197,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.oferta h2 {
+  text-shadow: 0px 0px 5px #000;
+}
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  height: 600px;
-  width: 50%;
+  height: 1000px;
+  width: 100%;
   grid-template-areas: "img1 img1 img2 img3" "img4 img5 img6 img6" "img7 img7 img8 img8";
 }
 .galeria .item {
@@ -202,36 +216,36 @@ html {
   border-radius: 10px;
   margin: 10px;
 }
-.galeria .item .item1 {
-  background-image: url(../imagenes/auto1.jpg);
+.galeria .item1 {
+  background-image: url(../imagenes/foto4.jpg);
   grid-area: img1;
 }
-.galeria .item .item2 {
-  background-image: url(../imagenes/auto3\ \(1\).jpg);
+.galeria .item2 {
+  background-image: url(../imagenes/foto6.jpg);
   grid-area: img2;
 }
-.galeria .item .item3 {
-  background-image: url(../imagenes/auto3\ \(2\).jpg);
+.galeria .item3 {
+  background-image: url(../imagenes/foto8.jpg);
   grid-area: img3;
 }
-.galeria .item .item4 {
-  background-image: url(../imagenes/banner.jpg);
+.galeria .item4 {
+  background-image: url(../imagenes/foto9.jpg);
   grid-area: img4;
 }
-.galeria .item .item5 {
-  background-image: url(../imagenes/parking-g9aa4590f4_640.png);
+.galeria .item5 {
+  background-image: url(../imagenes/foto11.jpg);
   grid-area: img5;
 }
-.galeria .item .item6 {
-  background-image: url(../imagenes/auto1.jpg);
+.galeria .item6 {
+  background-image: url(../imagenes/foto2.jpg);
   grid-area: img6;
 }
-.galeria .item .item7 {
-  background-image: url(../imagenes/auto3\ \(1\).jpg);
+.galeria .item7 {
+  background-image: url(../imagenes/foto5.jpg);
   grid-area: img7;
 }
-.galeria .item .item8 {
-  background-image: url(../imagenes/auto3\ \(2\).jpg);
+.galeria .item8 {
+  background-image: url(../imagenes/foto10.jpg);
   grid-area: img8;
 }
 
