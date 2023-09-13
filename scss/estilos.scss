@@ -394,10 +394,25 @@ html{
     font-family: 'Montserrat', sans-serif;
     color: #83c442;
 }
-
+#info{
+    background-color: $colorprincipal;
+    padding: 50px;
+    h1{
+        margin-bottom: 20px;
+    }
+    p{
+        color: #fafafa;
+        text-shadow: 0px 0px 10px #000;
+        font-size: 20px;
+        a{
+            text-decoration: none;
+            color: $colorsecundario;
+        }
+    }
+}
 
 @media only screen and (max-width: 1030px){
-    div p{
+    div #parrafo1{
         display: -webkit-box;
         -webkit-line-clamp: 8;
         -webkit-box-orient: vertical;

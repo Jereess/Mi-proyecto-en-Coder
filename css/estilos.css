@@ -397,8 +397,25 @@ html {
   color: #83c442;
 }
 
+#info {
+  background-color: #3EA0E6;
+  padding: 50px;
+}
+#info h1 {
+  margin-bottom: 20px;
+}
+#info p {
+  color: #fafafa;
+  text-shadow: 0px 0px 10px #000;
+  font-size: 20px;
+}
+#info p a {
+  text-decoration: none;
+  color: #E5B91D;
+}
+
 @media only screen and (max-width: 1030px) {
-  div p {
+  div #parrafo1 {
     display: -webkit-box;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
