@@ -1,10 +1,11 @@
 $colorprincipal: #3EA0E6;
 $colorsecundario: #E5B91D;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Montserrat:wght@300&display=swap');
 
 *{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Jost', sans-serif;
     margin: 0px;  
-    padding: 0px;    
+    padding: 0px;
 }
 
 /* :root {
@@ -12,61 +13,69 @@ $colorsecundario: #E5B91D;
     --color-secundario: #E5B91D;
 } */
 
-h1 {
-    color: aliceblue;
-    box-shadow: 10px;
-    text-shadow: 0px 0px 5px #000;
-}
+
 
 main{
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-color: #3ea0e6;
-    background-image: linear-gradient(180deg, #3ea0e6 2%, #f0f8ff 15%, #fafafa 93%, #3ea0e6 98%);
+    background-image: linear-gradient(180deg, #3ea0e6 0%, #fafafa 15%);
 
+    padding: 10px;
 }
-#mainubicacion{
+#main-ubicacion{
     background-size: cover;
     background-position: center;
     background-color: $colorprincipal;
     background-color: #3ea0e6;
     background-image: linear-gradient(180deg, #3ea0e6 0%, #fafafa 17%, #f0f8ff 86%, #ff1111 100%);
+    padding: 10px;
+    p{
+        padding: 10px;
+    }
+    h2{
+        padding: 8px;
+    }
 }
-#footerubicacion{
+
+#footer-ubicacion{
     background-color: #FF1111;
-    height: 200px;
+    height: 270px;
 }
+
+
 .hr{
-    height: 5px !important;
+    height: 2px !important;
     color:#000 !important;
     opacity: 0 !important;
     width: 90%;
     margin-left: 20px !important;
 }
 
-.hrubicacion{
-    height: 5px !important;
+.hr-ubicacion{
+    height: 1.5px !important;
     color:#000 !important;
     opacity: 100 !important;
     width: 90%;
     margin-left: 20px !important;
 }
-.hravella{
-    height: 5px !important;
+.hr-avella{
+    height: 2px !important;
     opacity: 100 !important;
     width: 90%;
     margin-left: 20px !important;
     color: #83c442
 }
-.hrracing{
-    height: 5px !important;
+.hr-racing{
+    height: 2px !important;
     opacity: 100 !important;
     width: 90%;
     margin-left: 20px !important;
     color: $colorprincipal
 }
-.hrcai{
-    height: 5px !important;
+.hr-cai{
+    height: 2px !important;
     opacity: 100 !important;
     width: 90%;
     margin-left: 20px !important;
@@ -97,7 +106,7 @@ main{
         padding: 10px;
         margin: 25px;
         color: black;
-        text-shadow: 0px 0px 5px #000;
+        font-size: 18px;
     }
     h2{
         color: black;
@@ -120,11 +129,9 @@ main{
 
 .servicios4{
     border-right: none;
-    grid-area: servicios4;
     height: 350px;
     padding: 20px;
     color: black;
-    text-shadow: 0px 0px 2px #000;
     ul{
         text-align: left;
         padding: 20px;
@@ -137,37 +144,18 @@ main{
     }
 }
 
-
-
-
 .video6{
     border-left: none;
-    grid-area: video6;
     height: 500px;
-    padding-right: 10px;
-    iframe{
-        padding: 5px;
+    video{
         width: 100%;
+        height: 450px;
+        margin-right: 5px;
     }
 }
-
-.carrucel7{
-    border-left: none; 
-    height: 500px;
-    div{
-        display: flex;
-        scroll-snap-type: mandatory;
-        overflow-x: auto;
-        width: 100%;
-        height: 499px;
-        
-    
-    }
-}
-.carrucel7 #carrucel1 img{
+.video{
     width: 100%;
-    /* background-size:cover; */
-    scroll-snap-align: center;
+    height: 500px;
 }
 
 #carouselExampleFade{
@@ -183,7 +171,7 @@ main{
 footer {
     background-color:#3EA0E6 ;
     width: 100%;
-    height: 150px;
+    height: 250px;
     text-align: center;
     font-size: 30px;
     color: #ffffff;
@@ -196,21 +184,77 @@ footer {
             text-align: center;
             background-color: $colorsecundario;
             color: #E4E3DE;
-            font-size: 40px;
+            font-size: 30px;
+            
+        }
+        .subir :active {
+            box-shadow: inset 0 0 5px $colorsecundario;
+            text-decoration: none;
+        }
+        #whatsapp{
+            
+            text-decoration: none !important;
+            font-size: 30px;
+            color: white;
+        }
+        #whatsapp :hover{
+            padding: 12px;
+            background-color: #25d366;
+            border-radius: 80%;
+        }
+        .menu{
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+
+            ul{
+                list-style: none;
+                li{
+                    display: inline-block;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 15px;
+                    }
+                    a:hover{
+                        color: $colorsecundario;
+                    }
+                }
+            }
+            
         }
 }
+#contactame{
+        float: right;
+        margin-right: 20px;
+        img{
+            height: 100px;
+            width: 100px;
+        }
+}
+#contactame :hover{
+    background-color: #25d366 !important;
+    box-shadow: 0 0 3px #25d366;
+}
+
 html{
     scroll-behavior: smooth;
 }
 .oferta{
-    h2{
-        text-shadow: 0px 0px 5px #000;
+    h1{
+        padding: 5px;
+    }
+    ul{
+        li{
+            padding: 10px;
+            font-size: 23px;
+        }
     }
 }
 .galeria{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     height: 1000px;
     width: 100%; 
     grid-template-areas: "img1 img1 img2 img3"
@@ -269,28 +313,12 @@ html{
 #dropdownboton{
     float: right;
 }
-.carrucel8{
-    grid-area: carrucel7;
-    border-left: none; 
-    height: 350px;
-    div{
-        display: flex;
-        scroll-snap-type: mandatory;
-        overflow-x: auto;
-        width: 100%;
-        height: 330px;
-    }
-}
-.carrucel8 #carrucel1 img{
-    width: 100%;
-    background-size: cover;
-    scroll-snap-align: center;
-}
-#videoboot{
-    height: 500px;
-}
-#primerelemento{
+
+#primer-elemento{
     height: 400px;
+    p{
+        font-size: 20px;
+    }
     a{
         background-color:$colorsecundario;
         color:white;
@@ -305,17 +333,17 @@ html{
     }
 }
 
-#serviciosboot{
+#servicios-boot{
     height: 400px;
-    h2{
-        text-shadow: 0px 0px 10px #000;
-    }
-    li{
-        text-shadow: 0px 0px 10px #000;
+    #parrafo2{
+        a{
+            text-decoration: $colorsecundario !important;
+            color: $colorsecundario;
+        }
     }
 }
 
-#navbarboot{
+#navbar-boot{
     height: 150px;
     color: white;
     background-color: $colorprincipal;
@@ -326,18 +354,26 @@ html{
         text-decoration: none;
         margin: 30px;
     }
+    .navbar-brand{
+        font-size: 25px
+    }
     li a{
         margin:10px;
     }
     a:hover{
         color:$colorsecundario
     } 
+    .navbar-toggler-icon{
+        margin-top: 13px;
+        color: white;
+        text-shadow: 0px 0px 10px #000
+    }
+    .navbar-toggler-icon :hover{
+        text-shadow: 0px 0px 15px $colorsecundario;
+        color: $colorsecundario;
+    }
 }
-
-#botonboot{
-    background-color: $colorsecundario;
-}
-#imagenboot{
+#imagen-boot{
     height: 80px;
     width: 80px;
 }
@@ -347,13 +383,18 @@ html{
     opacity: 80 !important;
     width: 30%;
 }
-
-.formularioboot {
+.formulario-boot {
     background-color: $colorprincipal;
     padding: 20px;
     
     .form-label{
         color: white;  
+    }
+    h1{
+        color: aliceblue;
+        box-shadow: 10px;
+        text-shadow: 0px 0px 5px #000;
+        margin-bottom: 20px;
     }
     label #comentario{
         color: #000;
@@ -376,14 +417,14 @@ html{
 #comentario {
     color: #000;
 }
-#botonform{
+#boton-form{
     background-color: $colorsecundario;
     text-decoration: none;
     color: white;
     padding: 8px;
     border-radius: 5%;
 }
-#botonform:hover{
+#boton-form:hover{
     background-color: #e5ba1dec;
 }
 .libertadores{
@@ -393,11 +434,16 @@ html{
 #montserrat{
     font-family: 'Montserrat', sans-serif;
     color: #83c442;
+    font-size: 30px;
+    margin: 10px;
 }
 #info{
     background-color: $colorprincipal;
     padding: 50px;
-    h1{
+    h1 {
+        color: aliceblue;
+        box-shadow: 10px;
+        text-shadow: 0px 0px 5px #000;
         margin-bottom: 20px;
     }
     p{
@@ -411,6 +457,24 @@ html{
     }
 }
 
+@media only screen and (max-width: 1500px){
+    #servicios-boot article p{
+        font-size: 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 1380px){
+    .home1 p{
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-width: 1181px){
+    .home1 p{
+        font-size: 15px;
+    }
+}
 @media only screen and (max-width: 1030px){
     div #parrafo1{
         display: -webkit-box;
@@ -420,10 +484,10 @@ html{
         font-size: 13px;
     }
     div h2{
-        font-size: 20px;
+        font-size: 25px;
     }
     div h3{
-        font-size: 15px;
+        font-size: 20px;
     }
     .row li{
         font-size: 13px;
@@ -431,36 +495,32 @@ html{
     #parrafo2{
         font-size: 10px;
     }
-    
-    footer{
-        height: 100px ;
-    }
+        
     .mapa{
         height: 250px;
         width: 250px;
     }
 }
-@media only screen and (max-width: 1500px){
-    #serviciosboot article p{
-        font-size: 15px;
-    }
+
+@media only screen and (max-width: 892px){
+    .servicios4{
+        padding: 10px;
     
-}
-
-@media only screen and (max-width: 1500px){
-
-}
-@media only screen and (max-width: 380px){
-    #serviciosboot h2{
-        font-size: 18px;
     }
-    #serviciosboot li{
-        font-size: 13px;
+    #servicios-boot h1{
+        font-size: 25px;
     }
-    #serviciosboot p{
-        font-size: 10px;
-    }#serviciosboot article p{
-        font-size: 11px;
+    #servicios-boot ul{
+        padding: 10px;
+        margin: 15px;
+    }
+    #servicios-boot li{
+        font-size: 17px;
+        padding: 10px;
+    }
+    #servicios-boot p{
+        font-size: 14px;
+        padding: 5px;
     }
 }
 @media only screen and (max-width: 800px){
@@ -468,41 +528,92 @@ html{
         height: 350px;
     }
     .libertadores{
-        height: 50px;
-        width: 40px;
+        height: 40px;
+        width: 30px;
     }
     a .subir{
         font-size: 20px;
         height: 40px;
         
     }
+    #servicios-boot h2{
+        font-size: 18px;
+    }
+    #servicios-boot li{
+        font-size: 13px;
+    }
+    #servicios-boot p{
+        font-size: 10px;
+    }#servicios-boot article p{
+        font-size: 11px;
+    }
 }
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 767px){
     .hr{
         opacity: 100 !important;
     }
     .home{
         border: none;
+        #parrafo1{
+            font-size: 15px;
+            display:block
+        }
     }
-    .hravella{
-        opacity: 100 !important;
+    #servicios-boot h2{
+        font-size: 25px !important;
     }
-    #imagenboot{
+    #servicios-boot li{
+        font-size: 17px !important;
+    }
+    #servicios-boot p{
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width: 575px){
+    
+    #imagen-boot{
         height: 50px;
         width: 50px;
     }
     #carouselExampleFade{
         height: 400px;
     }
+    .navbar-brand{
+        font-size: 20px !important;
+    }
+    .oferta{
+        li{
+            font-size: 18px !important;
+        }
+    }
+    
+    .menu{
+        a{
+            font-size: 10px !important;
+        }
+    }
 }
-@media only screen and (max-width: 415px){
-    #imagenboot{
+@media only screen and (max-width: 443px){
+    #imagen-boot{
         width: 0px;
         height: 0px;
     }
-    #navbarboot a{
+    #navbar-boot a{
         font-size: 18px;
         margin: 15px;
+    }
+    #parrafo1{
+        font-size: 13px !important;
+    }
+    .home1 a{
+        padding: 5px !important;
+        font-size: 15px !important;
+    }
 
+
+}
+@media only screen and (max-width: 380px){
+    .home1 p{
+        margin: 15px;
     }
 }
