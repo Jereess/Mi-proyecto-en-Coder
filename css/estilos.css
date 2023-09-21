@@ -92,7 +92,6 @@ main {
 }
 
 .home1 {
-  grid-area: home1;
   border-right: none;
   height: 250px;
   padding: 20px;
@@ -154,7 +153,7 @@ main {
 
 #carouselExampleFade {
   background-size: cover !important;
-  height: 600px !important;
+  height: 500px !important;
 }
 #carouselExampleFade div img {
   background-size: cover !important;
@@ -450,6 +449,15 @@ html {
   color: #E5B91D;
 }
 
+@media only screen and (max-width: 1515px) {
+  div #parrafo1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 1500px) {
   #servicios-boot article p {
     font-size: 15px;
@@ -466,13 +474,6 @@ html {
   }
 }
 @media only screen and (max-width: 1030px) {
-  div #parrafo1 {
-    display: -webkit-box;
-    -webkit-line-clamp: 8;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 13px;
-  }
   div h2 {
     font-size: 25px;
   }
